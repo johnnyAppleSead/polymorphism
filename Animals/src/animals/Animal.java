@@ -1,6 +1,8 @@
 package animals;
 
-public abstract class Animal implements Comparable<Animal>{
+import interfaces.Walkable;
+
+public abstract class Animal implements Comparable<Animal>, Walkable{
 	protected String name;
 	protected double walkSpeed;
 	protected int legCount;
@@ -49,7 +51,6 @@ public abstract class Animal implements Comparable<Animal>{
 		}catch(Exception e) {
 			return false;
 		}
-		
 	}
 	
 	@Override
@@ -61,7 +62,5 @@ public abstract class Animal implements Comparable<Animal>{
 		}
 		return 0;
 	}
-	
-	public abstract void walk();
 	
 }

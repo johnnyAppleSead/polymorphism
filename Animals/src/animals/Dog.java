@@ -1,7 +1,6 @@
 package animals;
 
 public class Dog extends Animal{
-	
 	public Dog(String name, double walkSpeed) {
 		super(name, walkSpeed, 4);
 	}

@@ -6,17 +6,20 @@ import java.util.List;
 import animals.Animal;
 import animals.Cat;
 import animals.Dog;
+import animals.Duck;
 
 public class Main {
 	
 	public static void main(String... args) {
-		Dog d = new Dog("Fido", 2.4);
-		Cat c = new Cat("MeowCat", 1.2);
+		Dog dog = new Dog("Fido", 2.4);
+		Cat cat = new Cat("MeowCat", 1.2);
+		Duck duck = new Duck("Quackers", .8);
 		
 		List<Animal> animals = new ArrayList<>();
 		
-		storeAnimal(d, animals);
-		storeAnimal(c, animals);
+		storeAnimal(dog, animals);
+		storeAnimal(cat, animals);
+		storeAnimal(duck, animals);
 		
 		for(int count = 0; count < animals.size(); count++) {
 			Animal animal = animals.get(count);
